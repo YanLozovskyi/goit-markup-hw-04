@@ -308,6 +308,20 @@ address {
 .owr-team .list {
   display: flex;
   gap: 24px;
+  justify-content: center
+}
+
+.team-social-meadia-list .link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin-top: 8px;
+  background-color: var(--accent-color);
+  background-image: url(../images/instagram\ 2.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  border-radius: 50%;
 }
 
 .team-border {
