@@ -248,7 +248,21 @@ address {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
-.company-benefits .item::before {
+.benefits-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--secondary-background-color);
+}
+
+.benefits-icon {
+  width: 64px;
+  height: 64px;
+}
+
+/* .company-benefits .item::before {
   content: "";
   display: block;
   height: 112px;
@@ -256,9 +270,9 @@ address {
   background-size: auto;
   background-position: center;
   background-color: var(--secondary-background-color);
-}
+} */
 
-.company-benefits .item:nth-child(1)::before {
+/* .company-benefits .item:nth-child(1)::before {
   background-image: url(../images/antenna\ 1.svg);
 }
 
@@ -272,7 +286,7 @@ address {
 
 .company-benefits .item:nth-child(4)::before {
   background-image: url(../images/astronaut\ 1.svg);
-}
+} */
 
 /* products content */
 
@@ -308,20 +322,27 @@ address {
 .owr-team .list {
   display: flex;
   gap: 24px;
-  justify-content: center
+  justify-content: center;
 }
 
 .team-social-meadia-list .link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   margin-top: 8px;
   background-color: var(--accent-color);
-  background-image: url(../images/instagram\ 2.svg);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
   border-radius: 50%;
+}
+
+.team-social-meadia-list .link:is(:hover, :focus) {
+  background-color: var(--color-for-interactive-elements);
+}
+
+.team-social-media-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .team-border {
