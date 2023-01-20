@@ -16,6 +16,7 @@ html {
   --color-for-interactive-elements: #404bbf;
   --secondary-background-color: #f4f4fd;
   --cornflower-color: #e7e9fc;
+  --subtle-text: #8e8f99;
 }
 
 body {
@@ -353,6 +354,45 @@ address {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
+}
+
+/* Customers */
+
+.customers .section-title {
+  margin-bottom: 72px;
+}
+
+.customers .list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-icon {
+  width: 104px;
+  height: 56px;
+  fill: var(--subtle-text);
+}
+
+.customers .item {
+  width: 168px;
+}
+
+.customers .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--subtle-text);
+  border-radius: 4px;
+  height: 88px;
+}
+
+.customers .link:is(:hover, :focus) {
+  border-color: var(--accent-color);
+}
+
+.link:is(:hover,:focus) .customers-icon{
+  fill: var(--accent-color);
 }
 
 /* Portfolio */
