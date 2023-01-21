@@ -513,14 +513,17 @@ address {
   color: var(--cornflower-color);
 }
 
-.footer .container {
+.footer-content {
   display: flex;
-  
   align-items: baseline;
 }
 
 .footer-logo-box {
   margin-right: 120px;
+}
+
+.footer-social-media-text {
+  color: var(--color-white);
 }
 
 .footer-social-media-list {
